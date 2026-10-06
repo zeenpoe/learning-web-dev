@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME</title>
+    <link rel="stylesheet" href="./style_navbar.css">
+
+    <style>
+        * {
+            font-family:
+                system-ui,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Oxygen,
+                Ubuntu,
+                Cantarell,
+                "Open Sans",
+                "Helvetica Neue",
+                sans-serif;
+        }
+
+        table {
+            border-radius: 15px;
+        }
+
+        thead {
+            background-color: rgb(28, 245, 64);
+        }
+
+        tr:nth-child(even) {
+            background-color: rgb(182, 201, 200);
+        }
+
+        tr:hover {
+            background-color: rgb(182, 201, 200);
+        }
+
+        table,
+        th,
+        td {
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+
+        th,
+        td {
+            padding: 12.5px 15px;
+        }
+
+        .gambar_table {
+            width: 100px;
+            height: 60px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul id="list_link_navbar">
+            <li class="List"><a href="./latihan_membuat_table.html" class="Link_navbar">Home</a></li>
+            <li class="List"><a href="./Data.html" class="Link_navbar">Data</a></li>
+            <li class="List"><a href="./Video.html" class="Link_navbar">Video</a></li>
+        </ul>
+    </nav>
+    <h1>Latihan Html</h1>
+    <p>i like write code in html css and language programming in web</p>
+
+    <marquee behavior="alternate" direction="right">i fun when i write any code</marquee>
+    <marquee behavior="alternate" direction="left">my dopamine can see when i write code</marquee>
+
+    <h2>List of Contents</h2>
+    <ol>
+        <li>List</li>
+        <li>Hyperlink</li>
+        <li>Table</li>
+    </ol>
+
+    <ol>
+        Lab rpl terdiri dari:
+        <li style="font-weight: bold; cursor: pointer;">Lab ICT</li>
+        <li style="font-style: italic; cursor: pointer;">Lab industri</li>
+        <li style="text-decoration: underline; cursor: pointer;">Lab RPL</li>
+    </ol>
+    <ul>
+        Lab rpl terdiri dari:
+        <li style="font-weight: bold; cursor: pointer;">Lab ICT</li>
+        <li style="font-style: italic; cursor: pointer;">Lab industri</li>
+        <li style="text-decoration: underline; cursor: pointer;">Lab RPL</li>
+    </ul>
+
+    <h3>Table Mini</h3>
+    <table>
+        <tr>
+            <td>Kolom 1</td>
+            <td>Kolom 2</td>
+        </tr>
+        <tr>
+            <td>Kolom 1</td>
+            <td>Kolom 2</td>
+        </tr>
+        <tr>
+            <td>Kolom 1</td>
+            <td>Kolom 2</td>
+        </tr>
+        <tr>
+            <td>Kolom 1</td>
+            <td>Kolom 2</td>
+        </tr>
+    </table>
+
+    <table align="center">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>Kelas</th>
+                <th>Foto</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Iqbal</td>
+                <td>XI RPL 1</td>
+                <td>
+                    <img src="./gambar kodok.jpg" alt="gambar kodok" srcset="" class="gambar_table" />
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>faiz</td>
+                <td>XI RPL 2</td>
+                <td>
+                    <img src="./DUCK.jpg" alt="gambar bebek" srcset="" class="gambar_table" />
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>zeen</td>
+                <td>XI RPL 3</td>
+                <td>
+                    <img src="./gambar batman.jpg" alt="gambar batman" srcset="" class="gambar_table" />
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>eagle</td>
+                <td>XI RPL 4</td>
+                <td>
+                    <img src="./gambar banteng.jpg" alt="gambar banteng" srcset="" class="gambar_table" />
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>learn clip path css</title>
+
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            --width-kotak: 200px;
+            --height-kotak: 300px;
+            --radius-kotak: 15px;
+        }
+
+        .parent:hover {
+            .kotak {
+                clip-path: polygon(0 0, 0 100%, 100% 100%, 0% 100%);
+            }
+
+            .kotak:active {
+                clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0%);
+            }
+        }
+
+        .kotak {
+            width: var(--width-kotak);
+            height: var(--height-kotak);
+            background-color: red;
+
+            position: absolute;
+            left: 50%;
+            bottom: 50%;
+            z-index: 1;
+
+            transform: translate(-50%);
+
+            clip-path: polygon(0 0, 0 100%, 100% 100%, 90% 10%);
+            transition: all 0.2s cubic-bezier(0.39, 0.575, 0.565, 1);
+            border-radius: var(--radius-kotak) 0 var(--radius-kotak) var(--radius-kotak);
+        }
+
+        .kotak-biru {
+            width: var(--width-kotak);
+            height: var(--height-kotak);
+            background-color: blue;
+
+            position: absolute;
+            left: 50%;
+            bottom: 50%;
+            z-index: 0;
+
+            transform: translate(-50%);
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            border-radius: var(--radius-kotak) var(--radius-kotak) var(--radius-kotak) var(--radius-kotak);
+
+            p {
+                color: white;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="kotak">
+        </div>
+        <div class="kotak-biru">
+            <p>ini adalah teks</p>
+        </div>
+    </div>
+</body>
+
+</html>

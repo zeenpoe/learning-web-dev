@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman kontak</title>
+
+    <style>
+        * {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 20px 0 0 0;
+        }
+
+        table,
+        tr,
+        td,
+        th {
+            border: 1px solid black;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        #navigation {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 25px;
+
+            padding: 0;
+        }
+
+        .list-link {
+            list-style: none;
+        }
+
+        .link {
+            color: black;
+            text-decoration: none;
+        }
+
+        .link:hover {
+            text-decoration: underline;
+            color: blueviolet;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <table width="90%" border="1" align="center">
+        <!-- bagiah header -->
+        <tr style="background-color: burlywood;">
+            <td colspan="3" align="center">
+                <h1>SMK Negeri 1 Slawi</h1>
+                <p>Slawi - Kab. Tegal, Telp 0283 399120</p>
+                <marquee behavior="alternate" direction="right" style="color: rgb(255, 17, 0);">Selamat datang di Smk
+                    negeri 1 slawi</marquee>
+            </td>
+        </tr>
+        <!-- bagian navbar -->
+        <tr style="background-color: aquamarine;">
+            <td colspan="3" align="center">
+                <ul id="navigation">
+                    <li class="list-link"><a class="link" href="./halaman-katalog.html">Katalog</a></li>
+                    <li class="list-link"><a class="link" href="./halaman-kontak.html">Kontak</a></li>
+                    <li class="list-link"><a class="link" href="./halaman-profile.html">Profile</a></li>
+                </ul>
+            </td>
+        </tr>
+        <!-- bagian main content -->
+        <tr style="height: 650px; background-color: antiquewhite;">
+            <!-- side kiri -->
+            <td align="center" style="background-color: chartreuse;">side left</td>
+
+            <!-- table -->
+            <td>
+                <h2>Ini adalah halaman kontak</h2>
+                <table style="width: 100%;" cellpadding="20px">
+                    <thead>
+                        <tr>
+                            <th>Metode</th>
+                            <th>Nomor atau alamat</th>
+                        </tr>
+                    </thead>
+                    <tbody align="center">
+                        <tr>
+                            <td>Whatsapp</td>
+                            <td class="link">081190013456</td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td class="link">zeenpoe@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Alamat Usaha</td>
+                            <td class="link">Kab. Tegal Kec. Pangkah Dk. Jati Raisem Rt.8 Rw.6</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            <!-- table -->
+
+            <!-- side kanan -->
+            <td align="center" style="background-color: chartreuse;">side right</td>
+        </tr>
+
+        <!-- footer -->
+        <tr style="background-color: cadetblue;">
+            <td colspan="3" align="center">
+                <h3>Design By Zeen Poe or Iqbal</h3>
+                <p>In High school smk negeri 1 slawi</p>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
